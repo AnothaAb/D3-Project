@@ -33,7 +33,7 @@ While Plotly.js is excellent for quickly generating charts with minimal code, I 
 - **Dynamic Visualizations:** I gained experience in creating visualizations that respond to user input. Which I did before but here I was able to animate it to make it look SO MUC SMOOTHER which I loved!
 
 ## Demo 
-[![D3 Intro Simple Project](http://img.youtube.com/vi/VIDEO_ID/0.jpg)]([http://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=QODCa9vS3NI))
+[![D3 Intro Simple Project](http://img.youtube.com/vi/QODCa9vS3NI/0.jpg)](http://www.youtube.com/watch?v=QODCa9vS3NI)
 
 
 ## Conclusion
