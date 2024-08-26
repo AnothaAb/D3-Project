@@ -1,39 +1,71 @@
-<html >
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
   <title>CoffeeVis</title>
+  
+  <!-- Linking to the external CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+  <!-- Loading the D3.js library for data visualization -->
   <script src="lib/d3.js"></script>
+  
+  <!-- Loading the JavaScript file that contains the chart code -->
   <script src="js/coffee.js"></script>
-  <style>
-    .axis path,
-    .axis line {
-      fill: none;
-      stroke: #000;
-      shape-rendering: crispEdges;
-    }
-  </style>
 </head>
-<body onload="init()"> <!-- init() method defined in coffee.js-->
+<body>
 
-<div style="margin:30;">
-  <div style="display: table-cell; width: 120;">
-    <label for="xdropdown">X: </label><select id="xdropdown">
-      <option val="region">region</option>
-      <option val="category">category</option>
-    </select>
-  </div>
-  <div style="display: table-cell; width: 150;">
-    <label for="ydropdown">Y: </label><select id="ydropdown">
-      <option val="sales">sales</option>
-      <option val="profit">profit</option>
-    </select>
-  </div>
-  <div style="display: table-cell; width: 150;">
-    <button id="update" onclick="updateClicked()">Update</button>
+<!-- Showing the first screen that the user sees -->
+<div id="welcome-container">
+  <div id="welcome-message">
+    <p>Hi, if your name is Grace you are allowed to use this special tool.<br>So is your name Grace?</p>
+    <button id="yes-btn">Yes</button>
+    <button id="no-btn">No</button>
   </div>
 </div>
 
-<div id="vis"></div>
+<!-- Hiding the main application initially -->
+<div id="app-container" style="display: none;">
+  <header>
+    Hi Grace :]
+  </header>
+  <hr>
+
+  <!-- Showing the controls for selecting X and Y axis attributes -->
+  <div class="controls">
+    <label for="xdropdown">Choose the X axis: </label>
+    <select id="xdropdown">
+      <option value="region">region</option>
+      <option value="category">category</option>
+    </select>
+
+    <label for="ydropdown">Choose the Y axis: </label>
+    <select id="ydropdown">
+      <option value="sales">sales</option>
+      <option value="profit">profit</option>
+    </select>
+
+    <button id="update" onclick="updateClicked()">Update</button>
+  </div>
+
+  <!-- Creating a container for the D3 visualization -->
+  <div id="vis"></div>
+</div>
+
+<!-- Adding JavaScript to handle the welcome screen buttons -->
+<script>
+  // Showing the main app if "Yes" is clicked
+  document.getElementById('yes-btn').onclick = function() {
+    document.getElementById('welcome-container').style.display = 'none';
+    document.getElementById('app-container').style.display = 'block';
+    init();  // Initializing the chart
+  };
+
+  // Redirecting to appropriate and professional joke if "No" is clicked
+  document.getElementById('no-btn').onclick = function() {
+    window.location.href = 'https://www.google.com/search?q=L&sca_esv=639d0eebad58d522&sca_upv=1&udm=2&biw=1512&bih=824&sxsrf=ADLYWIIzPbRhqa0ud13NtdD9TdUKvlFmhw%3A1724645257408&ei=if_LZqzKGM6u5NoPx6_b8AM&ved=0ahUKEwjssrmf5JGIAxVOF1kFHcfXFj4Q4dUDCBA&uact=5&oq=L&gs_lp=Egxnd3Mtd2l6LXNlcnAiAUwyBBAjGCcyBBAjGCcyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIOEAAYgAQYsQMYgwEYigVI-QVQmANYtgRwAngAkAEAmAF6oAHVAaoBAzEuMbgBA8gBAPgBAZgCBKAC3wHCAgYQABgHGB7CAgYQABgFGB7CAgYQABgIGB7CAg0QABiABBixAxhDGIoFmAMAiAYBkgcDMy4xoAfuDQ&sclient=gws-wiz-serp';
+  };
+</script>
 
 </body>
 </html>

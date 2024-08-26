@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;  
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #000;  
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  border: 2px solid #000;  
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #000;  
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;  
+  border: 2px solid #000;  
+  border-radius: 5px;
+  color: #ffffff;  
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;  
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;  
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 14px; 
+  font-weight: bold; 
+  fill: #000;       
+}
+
+#welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#welcome-message {
+  text-align: center;
+}
+
+#welcome-message p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#welcome-message button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid #000; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#welcome-message #yes-btn {
+  background-color: #000;
+  color: #ffffff;
+}
+
+#welcome-message #no-btn {
+  background-color: #f4f4f4;
+  color: #000;
+}
