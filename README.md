@@ -28,15 +28,16 @@ While Plotly.js is excellent for quickly generating charts with minimal code, I 
 - **D3.js:** Best suited for projects where customization, control, and uniqueness are key. It’s ideal for creating visualizations that need to stand out and if youn want to have a lot of control.
 - **Plotly.js:** Great for dashboards, quick prototypes, and standard charts where time is a factor and customization isn’t as critical.
 
-## What I Learned from This Project
-- **Data Aggregation:** I learned how to group and summarize data in JavaScript using D3’s `nest()` and `rollup()` functions. This was crucial for transforming the raw sales data into meaningful insights and it was no fuss once I broke it downa and figured it out.
-- **Dynamic Visualizations:** I gained experience in creating visualizations that respond to user input. Which I did before but here I was able to animate it to make it look SO MUC SMOOTHER which I loved!
 
 ## Demo 
 [![D3 Intro Simple Project](http://img.youtube.com/vi/QODCa9vS3NI/0.jpg)](http://www.youtube.com/watch?v=QODCa9vS3NI)
 
 
-## Conclusion
+## Conclusion and what I Learned from This Project
+- **Data Aggregation:** I learned how to group and summarize data in JavaScript using D3’s `nest()` and `rollup()` functions. This was crucial for transforming the raw sales data into meaningful insights and it was no fuss once I broke it downa and figured it out.
+
+- **Dynamic Visualizations:** I gained experience in creating visualizations that respond to user input. Which I did before but here I was able to animate it to make it look SO MUC SMOOTHER which I loved!
+
 Overall, this project has been a great opportunity to dive into D3 and explore the full range of its capabilities. I appreciate the flexibility and power that D3 offers and am confident that the skills I’ve learned here will be valuable in my future projects. While Plotly.js is a solid tool for quick visualizations, D3.js is my go-to choice for projects where customization and creativity are paramount.
 
 ---
